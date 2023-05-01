@@ -1,0 +1,110 @@
+body {
+    width: 300px;
+    height: 250px;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+h1 {
+    color: #4a4a4a;
+    font-size: 24px;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    width: 100%;
+}
+.button-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+button {
+    margin: 10px 0;
+    padding: 15px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #5dade2;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+#send:hover,
+button:hover {
+    background-color: #3498db;
+}
+#send:active,
+button:active {
+    background-color: #2980b9;
+}
+#send:focus,
+button:focus {
+    outline: none;
+}
+.circle-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    position: relative;
+}
+.circle {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: #d3d3d3;
+
+    position: absolute;
+    right: 13%;
+    transform: translateX(50%) translateY(-50%);
+    top: 50%;
+    
+}
+.circle i {
+    font-size: 30px;
+    margin-left: 2px;
+    margin-top: 1px;
+}
+.tick {
+    color: #2ecc71;
+}
+.cross {
+    color: #e74c3c;
+}
+
+.text-box {
+    display: flex;
+    align-items: stretch;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#input {
+    flex-grow: 1;
+    padding: 5px;
+    border: none;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+}
+
+#send {
+    background-color: #5dade2;
+    padding: 6px 8px;
+    font-size: 16px;
+    color: #ffffff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    line-height: 1;
+}
+
+.text-box:focus-within {
+    border-color: #3498db;
+}
