@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <h1>Manga Chapter Notifier</h1>
+        <div class="circle-container">
+            <button id="updateCurrent">Update current chapter</button>
+            <div class="circle">
+                <!-- Uncomment one of the following lines to display a green tick or red cross -->
+                <!-- <i class="tick">&#x2714;</i> -->
+                <!-- <i class="cross">&#x2716;</i> -->
+            </div>
+        </div>
+        <div class="button-container">
+            <button id="checkUpdates">Check for new chapters</button>
+            <button id="printChapters">Print</button>
+        </div>
+        <div class="text-box">
+            <input type="text" id="input" placeholder="URL to remove">
+            <div id="send">&#x27a4;</div>
+        </div>
+
+        <script src="popup.js"></script>
+  </body>
+</html>
